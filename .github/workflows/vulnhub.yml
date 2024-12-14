@@ -15,7 +15,7 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
-      - name: Real working VulnGuard scanner main
+      - name: Real working VulnGuard scanner please work
         uses: DakshRocks21/VulnGuard@dev-ai-fixing
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
