@@ -15,6 +15,7 @@
 #           ref: ${{ github.head_ref }}
 #           fetch-depth: 0
 
+# <<<<<<< dev
 #       - name: Real working VulnGuard scanner main
 #         uses: DakshRocks21/VulnGuard@dev
 #         env:
@@ -23,3 +24,15 @@
 #           BOT_KEY: ${{ secrets.BOT_KEY }}
 #           BASE_SHA: ${{ github.event.pull_request.base.sha }}
 #           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+#           PR_NUMBER: ${{ github.event.pull_request.number }}
+# =======
+#       - name: Real working VulnGuard scanner main
+#         uses: DakshRocks21/VulnGuard@dev
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+#           BOT_KEY: ${{ secrets.BOT_KEY }}
+#           BASE_SHA: ${{ github.event.pull_request.base.sha }}
+#           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+# >>>>>>> main
+
