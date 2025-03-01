@@ -2,7 +2,7 @@ from flask import Flask, request
 import sqlite3
 
 app = Flask(__name__)
-
+ 
 # Set up the database (for demonstration purposes)
 def init_db():
     conn = sqlite3.connect('example.db')
